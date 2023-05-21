@@ -89,7 +89,7 @@ public class MakeChange {
 			} else if (change >= pennies) {
 				answer = (int) Math.round(change * 100);
 				if (change > 0.019 && change != 5) {
-					System.out.println("and " + answer + "x" + " pennies");
+					System.out.println("Return " + answer + "x" + " pennies");
 				} else {
 					System.out.println("Return a penny");
 				}
@@ -100,11 +100,10 @@ public class MakeChange {
 	}
 
 	public static double findFloor(double x) {
-		int ceiling = (int) x;
-		if (x < 0 && (x % ceiling != 0)) {
-			ceiling = ceiling - 1;
+		int floor = (int) x;
+		if (x < 0 && (x % floor != 0)) {
+			floor = floor - 1;
 		}
-		return ceiling;
-
+		return floor;
 	}
 }
