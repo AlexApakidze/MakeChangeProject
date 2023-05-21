@@ -16,7 +16,7 @@ The MakeChange project I have created takes in the price of an item and how much
 
 2. Having a sandbox is useful for troubleshooting certain sections of your code to make sure its working 100% before applying the changes to the main code.
 
-3. "%.2f" is useful for finding the exact change to print out when java wants to change a 0.05 to a 0.499999999996
+3. "%.2f" is useful for finding the exact change to print out when java wants to change a 0.05 to a 0.0499999999996
 
 4. Nested if() statements are useful for returning different answers based on their own condition that also need to reference the condition of the parent if statement.
 
