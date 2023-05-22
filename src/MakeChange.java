@@ -27,7 +27,7 @@ public class MakeChange {
 		if (moneyGiven < priceOfItem) {
 			System.out.println("Not enough $$");
 		} else if (moneyGiven > priceOfItem) {
-			System.out.printf("The change is $ %.2f\n", change);
+			System.out.printf("The change is $%.2f\n", change);
 		} else if (change == 0) {
 			System.out.println("No change needed");
 		}
@@ -63,7 +63,7 @@ public class MakeChange {
 				}
 
 			} else if (change >= quarters) {
-				answer = (int) Math.round(change * 3);
+				answer = (int) Math.round(change * 4);
 				if (change > 0.499) {
 					System.out.println("Return " + answer + "x" + " quarters");
 					change = change - (0.25 * answer);
